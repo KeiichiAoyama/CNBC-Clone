@@ -30,4 +30,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .font-univers78 {
+    font-family: Univers78, sans-serif;
+  }
 }
