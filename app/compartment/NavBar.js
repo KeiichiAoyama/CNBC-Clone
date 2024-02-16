@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 function NavBar() {
     const [backgroundColor, setBackgroundColor] = useState('bg-white')
+    const [activeButton, setActiveButton] = useState(null)
 
     const clickRoute = () => {}
 
@@ -14,6 +15,10 @@ function NavBar() {
         } else {
             setBackgroundColor('bg-white');
         }
+    }
+
+    const clickReg = (buttonId) => {
+        setActiveButton(buttonId)
     }
 
   return (
@@ -128,7 +133,9 @@ function NavBar() {
                     </div>
                 </button>
 
-                <button className="text-white" onClick={clickRoute(3)}>
+                <button className={`text-white ${activeButton == 1 ? "border-b-2 border-white" : ""}`} 
+                    onClick={() => clickReg(1)}
+                >
                     <div className='px-1 font-calibri text-xs opacity-90'>
                         USA
                     </div>
@@ -136,7 +143,9 @@ function NavBar() {
 
                 <div className='text-white px-1 font-calibri text-xs font-bold'>.</div>
 
-                <button className="text-white mr-32" onClick={clickRoute(3)}>
+                <button className={`text-white mr-32 ${activeButton == 2 ? "border-b-2 border-white" : ""}`} 
+                    onClick={() => clickReg(2)}
+                >
                     <div className='px-1 font-calibri text-xs opacity-90'>
                         INTL
                     </div>
