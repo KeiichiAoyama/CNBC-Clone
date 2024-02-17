@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Navbar from "./compartment/NavBar.js"
+import Navbar from "./compartment/navbar/NavBar.js"
 
 export default function Home() {
   return (

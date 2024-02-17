@@ -1,0 +1,318 @@
+{
+    "markets": [
+        {
+            "category": "PRE-MARKETS",
+            "ref": "#"
+        },
+        {
+            "category": "US MARKETS",
+            "ref": "#"
+        },
+        {
+            "category": "EUROPE MARKETS",
+            "ref": "#"
+        },
+        {
+            "category": "CHINA MARKETS",
+            "ref": "#"
+        },
+        {
+            "category": "ASIA MARKETS",
+            "ref": "#"
+        },
+        {
+            "category": "WORLD MARKETS",
+            "ref": "#"
+        },
+        {
+            "category": "CRYPTOCURRENCIES",
+            "ref": "#"
+        },
+        {
+            "category": "FUTURES & COMMODITIES",
+            "ref": "#"
+        },
+        {
+            "category": "BONDS",
+            "ref": "#"
+        },
+        {
+            "category": "FUNDS & ETFS",
+            "ref": "#"
+        }
+    ],
+    "business": [
+        {
+            "category": "ECONOMY",
+            "ref": "#"
+        },
+        {
+            "category": "FINANCE",
+            "ref": "#"
+        },
+        {
+            "category": "HEALTH & SCIENCE",
+            "ref": "#"
+        },
+        {
+            "category": "MEDIA",
+            "ref": "#"
+        },
+        {
+            "category": "REAL ESTATE",
+            "ref": "#"
+        },
+        {
+            "category": "ENERGY",
+            "ref": "#"
+        },
+        {
+            "category": "CLIMATE",
+            "ref": "#"
+        },
+        {
+            "category": "TRANSPORTATION",
+            "ref": "#"
+        },
+        {
+            "category": "INDUSTRIALS",
+            "ref": "#"
+        },
+        {
+            "category": "RETAIL",
+            "ref": "#"
+        },
+        {
+            "category": "WEALTH",
+            "ref": "#"
+        },
+        {
+            "category": "SPORTS",
+            "ref": "#"
+        },
+        {
+            "category": "LIFE",
+            "ref": "#"
+        },
+        {
+            "category": "SMALL BUSINESS",
+            "ref": "#"
+        }
+    ],
+    "investing": [
+        {
+            "category": "PERSONAL FINANCE",
+            "ref": "#"
+        },
+        {
+            "category": "FINTECH",
+            "ref": "#"
+        },
+        {
+            "category": "FINANCIAL ADVISORS",
+            "ref": "#"
+        },
+        {
+            "category": "OPTIONS ACTION",
+            "ref": "#"
+        },
+        {
+            "category": "ETF STREET",
+            "ref": "#"
+        },
+        {
+            "category": "BUFFETT ARCHIVE",
+            "ref": "#"
+        },
+        {
+            "category": "EARNINGS",
+            "ref": "#"
+        },
+        {
+            "category": "TRADER TALK",
+            "ref": "#"
+        }
+    ],
+    "tech": [
+        {
+            "category": "CYBERSECURITY",
+            "ref": "#"
+        },
+        {
+            "category": "ENTERPRISE",
+            "ref": "#"
+        },
+        {
+            "category": "INTERNET",
+            "ref": "#"
+        },
+        {
+            "category": "MEDIA",
+            "ref": "#"
+        },
+        {
+            "category": "MOBILE",
+            "ref": "#"
+        },
+        {
+            "category": "SOCIAL MEDIA",
+            "ref": "#"
+        },
+        {
+            "category": "CNBC DISRUPTOR 50",
+            "ref": "#"
+        },
+        {
+            "category": "TECH GUIDE",
+            "ref": "#"
+        }
+    ],
+    "politics": [
+        {
+            "category": "WHITE HOUSE",
+            "ref": "#"
+        },
+        {
+            "category": "POLICY",
+            "ref": "#"
+        },
+        {
+            "category": "DEFENSE",
+            "ref": "#"
+        },
+        {
+            "category": "CONGRESS",
+            "ref": "#"
+        },
+        {
+            "category": "EQUITY AND OPPORTUNITY",
+            "ref": "#"
+        },
+        {
+            "category": "EUROPE POLITICS",
+            "ref": "#"
+        },
+        {
+            "category": "CHINA POLITICS",
+            "ref": "#"
+        },
+        {
+            "category": "ASIA POLITICS",
+            "ref": "#"
+        },
+        {
+            "category": "WORLD POLITICS",
+            "ref": "#"
+        }
+    ],
+    "cnbc-tv": [
+        {
+            "category": "LIVE AUDIO",
+            "ref": "#"
+        },
+        {
+            "category": "LATEST VIDEO",
+            "ref": "#"
+        },
+        {
+            "category": "TOP VIDEO",
+            "ref": "#"
+        },
+        {
+            "category": "CEO INTERVIEWS",
+            "ref": "#"
+        },
+        {
+            "category": "EUROPE TV",
+            "ref": "#"
+        },
+        {
+            "category": "ASIA TV",
+            "ref": "#"
+        },
+        {
+            "category": "CNBC PODCASTS",
+            "ref": "#"
+        },
+        {
+            "category": "DIGITAL ORIGINALS",
+            "ref": "#"
+        }
+    ],
+    "investing-club": [
+        {
+            "category": "TRUST PORTFOLIO",
+            "ref": "#"
+        },
+        {
+            "category": "ANALYSIS",
+            "ref": "#"
+        },
+        {
+            "category": "TRADE ALERTS",
+            "ref": "#"
+        },
+        {
+            "category": "MEETING VIDEOS",
+            "ref": "#"
+        },
+        {
+            "category": "HOMESTRETCH",
+            "ref": "#"
+        },
+        {
+            "category": "JIM'S COLUMNS",
+            "ref": "#"
+        },
+        {
+            "category": "EDUCATION",
+            "ref": "#"
+        },
+        {
+            "category": "SUBSCRIBE",
+            "ref": "#"
+        },
+        {
+            "category": "SIGN IN",
+            "ref": "#"
+        }
+    ],
+    "pro": [
+        {
+            "category": "PRO NEWS",
+            "ref": "#"
+        },
+        {
+            "category": "PRO LIVE",
+            "ref": "#"
+        },
+        {
+            "category": "FULL EPISODES",
+            "ref": "#"
+        },
+        {
+            "category": "STOCK SCREENER",
+            "ref": "#"
+        },
+        {
+            "category": "MARKET FORECAST",
+            "ref": "#"
+        },
+        {
+            "category": "OPTIONS INVESTING",
+            "ref": "#"
+        },
+        {
+            "category": "CHART INVESTING",
+            "ref": "#"
+        },
+        {
+            "category": "SUBSCRIBE",
+            "ref": "#"
+        },
+        {
+            "category": "SIGN IN",
+            "ref": "#"
+        }
+    ]
+}
