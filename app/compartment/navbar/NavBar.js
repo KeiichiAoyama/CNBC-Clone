@@ -15,6 +15,8 @@ function NavBar() {
         tech: false,
         politics: false,
         'cnbc-tv': false,
+        'investment-club': false,
+        pro: false
     });
 
     const toggleDropdown = (option) => {
@@ -32,6 +34,8 @@ function NavBar() {
             tech: false,
             politics: false,
             'cnbc-tv': false,
+            'investment-club': false,
+            pro: false
         });
     };
 
@@ -166,7 +170,7 @@ function NavBar() {
                     <div className='px-1 font-calibri text-sm font-bold'>
                         POLITICS
                     </div>
-                    {isDropdownOpen.markets && <DropDownModal onClose={closeDropdown} type={"politics"} />}
+                    {isDropdownOpen.politics && <DropDownModal onClose={closeDropdown} type={"politics"} />}
                 </button>
 
                 <button className={`text-white ml-4 border-b-4 border-transparent hover:border-yellow-400 hover:transition ease-in-out duration-300 focus:outline-none ${activeOption === "cnbc-tv" ? "border-yellow-400 transition ease-in-out duration-300" : ''}`}
@@ -184,26 +188,40 @@ function NavBar() {
                     {isDropdownOpen['cnbc-tv'] && <DropDownModal onClose={closeDropdown} type={"cnbc-tv"} />}
                 </button>
 
-                <button className={`text-white ml-4 items-center flex border-b-4 border-transparent hover:border-yellow-400 transition ease-in-out duration-300 focus:outline-none ${activeOption === "investing-club" ? "border-yellow-400 transition ease-in-out duration-300" : ''}`}
-                    onClick={() => { clickRoute(3); setActiveOption('investing-club'); }}
-                    onMouseEnter={() => setActiveOption('investing-club')}
-                    onMouseLeave={() => setActiveOption(null)}
+                <button className={`text-white ml-4 items-center border-b-4 border-transparent hover:border-yellow-400 transition ease-in-out duration-300 focus:outline-none ${activeOption === "investing-club" ? "border-yellow-400 transition ease-in-out duration-300" : ''}`}
+                    onMouseEnter={() => {
+                        setActiveOption('investing-club')
+                        toggleDropdown('investing-club')
+                    }}
+                    onMouseLeave={() => {
+                        setActiveOption(null)
+                    }}
                 >
-                    <div className='px-1 font-calibri text-sm font-bold'>
-                        INVESTING CLUB
+                    <div className='flex'>
+                        <div className='px-1 font-calibri text-sm font-bold'>
+                            INVESTING CLUB
+                        </div>
+                        <Image src={"/locked.png"} width={12} height={10} className='ml-1'></Image>
                     </div>
-                    <Image src={"/locked.png"} width={12} height={10} className='ml-1'></Image>
+                    {isDropdownOpen['investing-club'] && <DropDownModal onClose={closeDropdown} type={"investing-club"} />}
                 </button>
 
-                <button className={`text-white ml-4 items-center flex border-b-4 border-transparent hover:border-yellow-400 transition ease-in-out duration-300 focus:outline-none ${activeOption === "pro" ? "border-yellow-400 transition ease-in-out duration-300" : ''}`}
-                    onClick={() => { clickRoute(3); setActiveOption('pro'); }}
-                    onMouseEnter={() => setActiveOption('pro')}
-                    onMouseLeave={() => setActiveOption(null)}
+                <button className={`text-white ml-4 items-center border-b-4 border-transparent hover:border-yellow-400 transition ease-in-out duration-300 focus:outline-none ${activeOption === "pro" ? "border-yellow-400 transition ease-in-out duration-300" : ''}`}
+                    onMouseEnter={() => {
+                        setActiveOption('pro')
+                        toggleDropdown('pro')
+                    }}
+                    onMouseLeave={() => {
+                        setActiveOption(null)
+                    }}
                 >
-                    <div className='px-1 font-calibri text-sm font-bold'>
-                        PRO
+                    <div className='flex'>
+                        <div className='px-1 font-calibri text-sm font-bold'>
+                            PRO
+                        </div>
+                        <Image src={"/locked.png"} width={12} height={10} className='ml-1'></Image>
                     </div>
-                    <Image src={"/locked.png"} width={12} height={10} className='ml-1'></Image>
+                    {isDropdownOpen.pro && <DropDownModal onClose={closeDropdown} type={"pro"} />}
                 </button>
 
                 <div className='ml-auto justify-end flex'>
