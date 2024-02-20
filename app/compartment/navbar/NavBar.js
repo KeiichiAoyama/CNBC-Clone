@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import DropDownModal from './NavOptModal'
+import DropDownSelect from './SelectOpt'
 
 function NavBar() {
     const [backgroundColor, setBackgroundColor] = useState('bg-white')
@@ -16,7 +17,8 @@ function NavBar() {
         politics: false,
         'cnbc-tv': false,
         'investment-club': false,
-        pro: false
+        pro: false,
+        select: false
     });
 
     const toggleDropdown = (option) => {
@@ -35,7 +37,8 @@ function NavBar() {
             politics: false,
             'cnbc-tv': false,
             'investment-club': false,
-            pro: false
+            pro: false,
+            select: false
         });
     };
 
@@ -231,10 +234,19 @@ function NavBar() {
                         </div>
                     </button>
 
-                    <button className="text-white mr-16 hover:text-orange-400" onClick={clickRoute(3)}>
+                    <button className="text-white mr-16 hover:text-orange-400" 
+                        onMouseEnter={() => {
+                            setActiveOption('select')
+                            toggleDropdown('select')
+                        }}
+                        onMouseLeave={() => {
+                            setActiveOption(null)
+                        }}
+                    >
                         <div className='px-1 font-calibri text-xs opacity-90'>
                             SELECT
                         </div>
+                        {isDropdownOpen.select && <DropDownSelect onClose={closeDropdown}/>}
                     </button>
 
                     <button className={`text-white ${activeButton == 1 ? "border-b-2 border-white" : ""} hover:text-orange-400`}

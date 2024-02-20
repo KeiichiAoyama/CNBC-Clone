@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import data from './NavOptJSON.json'
+import data from './json/NavOptJSON.json'
 
 function NavOptModal({ type, onClose }) {
   let categories = data
