@@ -4,11 +4,13 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import DropDownModal from './NavOptModal'
 import DropDownSelect from './SelectOpt'
+import ScreenModal from './ScreenModal'
 
 function NavBar() {
     const [backgroundColor, setBackgroundColor] = useState('bg-white')
     const [activeButton, setActiveButton] = useState(null)
     const [activeOption, setActiveOption] = useState(null)
+    const [screenModal, setScreenModal] = useState(false)
     const [isDropdownOpen, setIsDropdownOpen] = useState({
         markets: false,
         business: false,
@@ -20,6 +22,10 @@ function NavBar() {
         pro: false,
         select: false
     });
+
+    const toggleScreenModal = () => {
+        setScreenModal(!screenModal)
+    }
 
     const toggleDropdown = (option) => {
         setIsDropdownOpen((prev) => ({
@@ -94,10 +100,12 @@ function NavBar() {
                     onMouseOut={() => setBackgroundColor('bg-white')}
                     onBlur={() => setBackgroundColor('bg-white')}
                     style={{ cursor: 'pointer' }}
+                    onClick={() => toggleScreenModal()}
                 >
                     <div className={`h-[2px] w-7 ${backgroundColor}`}></div>
                     <div className={`h-[2px] w-7 ${backgroundColor}`}></div>
                     <div className={`h-[2px] w-7 ${backgroundColor}`}></div>
+                    {screenModal && <ScreenModal />}
                 </div>
 
                 <button className={`text-white ml-4 border-b-4 border-transparent hover:border-yellow-400 hover:transition ease-in-out duration-300 focus:outline-none ${activeOption === "markets" ? "border-yellow-400 transition ease-in-out duration-300" : ''}`}
