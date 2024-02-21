@@ -96,16 +96,14 @@ function NavBar() {
             <div className='flex items-center'>
                 <div className="flex flex-col justify-between w-[15px] h-[14px] ml-8 mb-1 origin-center overflow-hidden"
                     onMouseOver={() => setBackgroundColor('bg-orange-400')}
-                    onFocus={() => setBackgroundColor('bg-orange-400')}
                     onMouseOut={() => setBackgroundColor('bg-white')}
-                    onBlur={() => setBackgroundColor('bg-white')}
                     style={{ cursor: 'pointer' }}
-                    onClick={() => toggleScreenModal()}
+                    onClick={() => [toggleScreenModal(), setBackgroundColor('bg-white')]}
                 >
                     <div className={`h-[2px] w-7 ${backgroundColor}`}></div>
                     <div className={`h-[2px] w-7 ${backgroundColor}`}></div>
                     <div className={`h-[2px] w-7 ${backgroundColor}`}></div>
-                    {screenModal && <ScreenModal />}
+                    {screenModal && <ScreenModal onClose={toggleScreenModal} />}
                 </div>
 
                 <button className={`text-white ml-4 border-b-4 border-transparent hover:border-yellow-400 hover:transition ease-in-out duration-300 focus:outline-none ${activeOption === "markets" ? "border-yellow-400 transition ease-in-out duration-300" : ''}`}

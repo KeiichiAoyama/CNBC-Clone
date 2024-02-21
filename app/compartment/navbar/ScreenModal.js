@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-function ScreenModal() {
-    const [searchGlow, setSearchGlow] = useState('text-blue-900');
+function ScreenModal( {onClose} ) {
+    const [searchGlow, setSearchGlow] = useState('text-blue-900')
 
     const glowSearch = (color) => {
-        setSearchGlow(color);
+        setSearchGlow(color)
     };
 
+    const handleClickInsideModal = (e) => {
+        e.stopPropagation()
+    }
+
     return (
-        <div className='fixed inset-0 flex justify-center items-center bg-white z-[100]'>
+        <div className='fixed inset-0 flex justify-center items-center bg-white z-[100]'  onClick={handleClickInsideModal}>
             <div className='w-full mx-8 h-full'>
                 <div className='h-10 mt-5 flex justify-start items-center'>
                     <button className='hover:text-orange-400 text-blue-600'>
-                        <div className='font-calibri'>
+                        <div className='font-calibri'  onClick={onClose}>
                             X
                         </div>
                     </button>
